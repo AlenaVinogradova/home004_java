@@ -1,17 +1,28 @@
 package home004;
 
+import java.util.Collections;
 import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.List;
 
 public class task {
     public static void main(String[] args) {
         ex01();
-        ex03();
+        // ex03();
     }
 
     public static void ex01() {
         /*Пусть дан LinkedList с несколькими элементами. Реализуйте метод, который вернет “перевернутый” список. 
         Постараться не обращаться к листу по индексам. */
+        List<Integer> ourList = new LinkedList<>();
+        for (int i = 0; i < 5; i++) {
+            ourList.add(i);
+        }
+        System.out.println(ourList);
+
+        Collections.reverse(ourList);
+        System.out.println(ourList);       
+
     }
 
     public static void ex03() {
